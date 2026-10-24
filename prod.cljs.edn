@@ -1,0 +1,4 @@
+{:main usrj.core
+ :optimizations :advanced
+ :output-to "resources/public/js/main.js"
+ :output-dir "target/public/cljs-out/prod"}

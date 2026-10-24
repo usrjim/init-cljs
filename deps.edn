@@ -1,1 +1,12 @@
-{:deps {org.clojure/clojurescript {:mvn/version "1.12.145"}}}
+{:paths ["src" "resources" "target"]
+ :deps {org.clojure/clojurescript {:mvn/version "1.12.145"}
+        com.bhauman/figwheel-main {:mvn/version "0.2.20"}}
+ :aliases
+ {:fig
+  {:main-opts ["-m" "figwheel.main"]}
+
+  :nrepl-cljs
+  {:extra-deps {nrepl/nrepl {:mvn/version "1.3.0"}
+                cider/cider-nrepl {:mvn/version "0.50.2"}
+                cider/piggieback {:mvn/version "0.5.3"}}
+   :main-opts ["-m" "nrepl.cmdline"]}}}
